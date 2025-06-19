@@ -210,3 +210,16 @@ body {
     color: #6c757d;
     opacity: 0.6;
 }
+/* ========================================= */
+/* == STYLE UNTUK MEMBUAT FOOTER MENEMPEL == */
+/* ========================================= */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Membuat body setidaknya setinggi layar */
+}
+
+main.container {
+    flex-grow: 1; /* Membuat konten utama mengisi ruang kosong, mendorong footer ke bawah */
+}
