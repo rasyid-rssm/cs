@@ -181,3 +181,32 @@ body {
     line-height: 1.6;
     margin-bottom: 2rem;
 }
+/* ====================================================== */
+/* == STYLE TAMBAHAN UNTUK MEMBUAT PLACEHOLDER PUDAR == */
+/* ====================================================== */
+
+.form-control::placeholder {
+    color: #6c757d; /* Warna abu-abu standar Bootstrap */
+    opacity: 0.6;   /* Kunci utama: membuatnya sedikit transparan */
+}
+
+/* Kode di bawah ini untuk memastikan gaya diterapkan di browser lama */
+.form-control::-webkit-input-placeholder {
+    color: #6c757d;
+    opacity: 0.6;
+}
+
+.form-control::-moz-placeholder {
+    color: #6c757d;
+    opacity: 0.6;
+}
+
+.form-control:-ms-input-placeholder {
+    color: #6c757d;
+    opacity: 0.6;
+}
+
+.form-control::-ms-input-placeholder {
+    color: #6c757d;
+    opacity: 0.6;
+}
