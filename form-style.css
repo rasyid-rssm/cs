@@ -1,0 +1,183 @@
+body {
+    background-color: #f0f2f5; /* Warna latar belakang abu-abu keunguan yang lembut */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem 0;
+}
+
+.main-wrapper {
+    width: 100%;
+    max-width: 600px; /* Lebar maksimal container form */
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 2.5rem; /* Jarak antara logo dan form */
+}
+
+.logo-container img {
+    max-width: 120px; /* Ukuran logo */
+    height: auto;
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 3rem; /* Padding lebih besar di dalam form */
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.form-container h1 {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 2.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem; /* Jarak antar field */
+}
+
+.form-label {
+    font-weight: 500;
+    color: #495057;
+    margin-bottom: 0.5rem;
+}
+
+.form-control, .form-select {
+    border-radius: 8px; /* Sudut lebih tumpul */
+    padding: 0.75rem 1rem;
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Kustomisasi area upload file */
+.file-upload-wrapper {
+    position: relative;
+    border: 2px dashed #e0e0e0;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.file-upload-wrapper:hover {
+    border-color: #0d6efd; /* Warna biru saat hover */
+}
+
+.file-upload-wrapper input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.file-upload-icon {
+    font-size: 2.5rem;
+    color: #adb5bd;
+    margin-bottom: 1rem;
+}
+
+.file-upload-text {
+    color: #6c757d;
+}
+
+.file-upload-text p {
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+}
+
+.file-upload-text span {
+    font-size: 0.85rem;
+}
+
+/* Tombol Submit */
+.btn-submit {
+    background-color: #1ed760; /* Warna hijau dari contoh */
+    border: none;
+    border-radius: 50px; /* Tombol sangat tumpul */
+    padding: 0.85rem 2rem;
+    font-weight: bold;
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #1ac858;
+}
+
+#file-name-display { /* Style untuk nama file yang diupload */
+    margin-top: 1rem;
+    font-style: italic;
+    color: #0d6efd;
+    font-weight: 500;
+}
+/* ========================================= */
+/* == STYLE UNTUK HALAMAN TERIMA KASIH    == */
+/* ========================================= */
+
+/* Kelas khusus untuk body halaman yang kontennya di tengah */
+.body-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5; /* Anda bisa sesuaikan warnanya agar sama dengan body utama jika perlu */
+}
+
+/* Kontainer untuk kotak "Terima Kasih" */
+.thank-you-container {
+    background-color: #ffffff;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Lingkaran hijau untuk ikon centang */
+.thank-you-container .icon-wrapper {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem auto;
+    background-color: #1ed760; /* Warna hijau */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thank-you-container .icon-wrapper svg {
+    color: white;
+    width: 40px;
+    height: 40px;
+}
+
+/* Styling teks di dalam kotak "Terima Kasih" */
+.thank-you-container h1 {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.thank-you-container p {
+    color: #6c757d;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
