@@ -1,5 +1,5 @@
 // !!! PENTING: Ganti URL di bawah dengan URL Web App BARU Anda dari Langkah 1 !!!
-const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbzyKzBldIxZ9LfzuO261c2PTsuVB8XLXXieQ7IMVMZSczLcvcdFMimD9-y3yb-jXHVi/exec';
+const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbws6-S-EJTdP613Ks9ZumVj6Yp_d8B2v8KTsmOy9VJ5ZaD06yl6NNCZGgzYHD3xRdPFYg/exec';
 // !!! -------------------------------------------------------------------- !!!
 
 document.addEventListener('DOMContentLoaded', () => {
