@@ -42,7 +42,7 @@
 
         <div class="card">
             <div class="card-header">
-                <input type="text" id="search-box" class="form-control" placeholder="Cari berdasarkan nama, lokasi, atau nomor ruangan...">
+                <input type="text" id="search-box" class="form-control" placeholder="Cari berdasarkan nama, lokasi, atau status...">
             </div>
             <div class="card-body">
                 <div id="loading" class="text-center p-4">
@@ -60,12 +60,19 @@
                                 <th>Lokasi</th>
                                 <th>No. Ruangan</th>
                                 <th>Kebutuhan</th>
+                                <th>Status</th>
                                 <th>Foto</th>
                             </tr>
                         </thead>
                         <tbody id="table-body"></tbody>
                     </table>
                 </div>
+            </div>
+            <div class="card-footer d-flex justify-content-end">
+                <nav id="pagination-nav">
+                    <ul class="pagination mb-0">
+                        </ul>
+                </nav>
             </div>
         </div>
     </main>
