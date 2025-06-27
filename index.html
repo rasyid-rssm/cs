@@ -19,18 +19,17 @@
         <div class="form-container">
             <h1>Formulir Layanan Cleaning Service</h1>
             
-            <form action="https://submit.jotform.com/submit/251691154370051" method="post" enctype="multipart/form-data" name="form_251691154370051" id="251691154370051" accept-charset="utf-8" autocomplete="on">
-                
+            <form id="laporan-form">                
                 <input type="hidden" name="formID" value="251691154370051" />
 
                 <div class="form-group">
-                    <label for="input_4" class="form-label">Nama <span class="text-danger">*</span></label>
-                    <input type="text" class="form-control" id="input_4" name="q4_nama" placeholder="Contoh: Budi Santoso" required>
+                    <label for="nama-pelapor" class="form-label">Nama <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="nama-pelapor" name="namaPelapor" placeholder="Contoh: Budi Santoso" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="input_5" class="form-label">Lokasi <span class="text-danger">*</span></label>
-                    <select class="form-select" id="input_5" name="q5_lokasi" required>
+                    <label for="lokasi" class="form-label">Lokasi <span class="text-danger">*</span></label>
+                    <select class="form-select" id="lokasi" name="lokasi" required>
                         <option selected disabled value="">Pilih Ruangan</option>
                         <option value="Instalasi Radiologi">Instalasi Radiologi</option>
                         <option value="Laboratorium Patologi Analogi">Laboratorium Patologi Analogi</option>
@@ -123,24 +122,24 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="input_6" class="form-label">Detail Ruangan <span class="text-danger">*</span></label>
-                    <input type="text" class="form-control" id="input_6" name="q6_detailRuangan" placeholder="Contoh: 122 atau Bed 5" required>
+                    <label for="detail-ruangan" class="form-label">Detail Ruangan <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="detail-ruangan" name="detailRuangan" placeholder="Contoh: 122 atau Bed 5" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="input_7" class="form-label">Jenis pembersihan yang dibutuhkan <span class="text-danger">*</span></label>
-                    <input type="text" class="form-control" id="input_7" name="q7_typeA" placeholder="Contoh: Tempat sampah penuh" required>
+                    <label for="jenis-pembersihan" class="form-label">Jenis pembersihan yang dibutuhkan <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="jenis-pembersihan" name="jenisPembersihan" placeholder="Contoh: Tempat sampah penuh" required>
                 </div>
                 
                 <div class="form-group">
-                    <label for="input_12" class="form-label">Email Konfirmasi (Opsional)</label>
-                    <input type="text" class="form-control" id="input_12" name="q12_emailKonfirmasi" placeholder="Contoh: budi@email.com">
+                    <label for="email-konfirmasi" class="form-label">Email Konfirmasi (Opsional)</label>
+                    <input type="text" class="form-control" id="email-konfirmasi" name="emailKonfirmasi" placeholder="Contoh: budi@email.com">
                 </div>
 
                 <div class="form-group">
                     <label class="form-label">Upload Foto</label>
                     <div class="file-upload-wrapper" id="file-upload-area">
-                        <input type="file" id="input_10" name="q10_uploadFoto[]" accept="image/*">
+                        <input type="file" id="upload-foto" name="uploadFoto" accept="image/*">
                         <div id="file-upload-default-text">
                             <div class="file-upload-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-cloud-arrow-up" viewBox="0 0 16 16">
@@ -160,6 +159,7 @@
                 <div class="text-center">
                     <button type="submit" class="btn btn-primary btn-submit">Submit</button>
                 </div>
+                <div id="form-status" class="text-center mt-3"></div>
             </form>
         </div>
     </div>
