@@ -223,3 +223,33 @@ body {
 main.container {
     flex-grow: 1; /* Membuat konten utama mengisi ruang kosong, mendorong footer ke bawah */
 }
+/* ... (semua kode CSS Anda yang sudah ada sebelumnya) ... */
+
+/* ========================================= */
+/* == STYLE UNTUK MEMBUAT FOOTER MENEMPEL == */
+/* ========================================= */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Membuat body setidaknya setinggi layar */
+}
+
+main.container {
+    flex-grow: 1; /* Membuat konten utama mengisi ruang kosong, mendorong footer ke bawah */
+}
+
+/* ========================================= */
+/* == [TAMBAHAN] ANIMASI UNTUK VALIDASI   == */
+/* ========================================= */
+
+.shake-animation {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    10%, 90% { transform: translateX(-5px); }
+    20%, 80% { transform: translateX(5px); }
+    30%, 50%, 70% { transform: translateX(-3px); }
+    40%, 60% { transform: translateX(3px); }
+}
