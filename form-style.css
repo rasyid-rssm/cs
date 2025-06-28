@@ -253,3 +253,26 @@ main.container {
     30%, 50%, 70% { transform: translateX(-3px); }
     40%, 60% { transform: translateX(3px); }
 }
+
+/* ========================================= */
+/* == [TAMBAHAN] Tampilan Mobile Responsif == */
+/* ========================================= */
+
+@media (max-width: 576px) {
+    body {
+        padding: 1rem 0; /* Mengurangi padding body di mobile */
+    }
+
+    .form-container {
+        padding: 1.5rem; /* Mengurangi padding di dalam form agar lebih lega */
+    }
+
+    .form-container h1 {
+        font-size: 1.5rem; /* Ukuran judul lebih kecil di mobile */
+        margin-bottom: 2rem;
+    }
+
+    .file-upload-wrapper {
+        padding: 1.5rem; /* Padding lebih kecil di area upload */
+    }
+}
